@@ -1,0 +1,21 @@
+{
+  ".gitignore": "09eb9b0d0c434c7809f1c90d2d0a48b91db4d198c6c076cd8b7612fa1f760557",
+  ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "index.html": "0497c4223c3782db060dea3735dd13f0812b0f674abe919a32cc5e9a5ec05061",
+  "THIRD-PARTY-NOTICES.md": "2790eca141da3e4e406210c1c9a5994eb244b56f5072cd55e0a7e87b32549cc3",
+  "README.md": "7c45b6a555054c27bbc25192b7a0cd0d43107b76d60a553f8f90351bbd714ea1",
+  "docs/NisabBnin.pdf": "39b4f0c9d6a0a95de7a090938302eb4c3acad742d187401ec81e7ab2c81aef2d",
+  "docs/link-index.csv": "6e0d297e349cec6e727b271e1e2fb6ddc0dfe640832ac604784d007ee8a1f18d",
+  "data/syllabus.js": "ba7e1b4adc96cc129c2d15a2137f6323006ef7fee3b65d70cb3c1d51ca075134",
+  "data/syllabus.json": "df24de266bb04e5cdfa3d149c23491958264a4ae1c29ca5cb63a63cd702efbb9",
+  "data/resource-links.js": "143f4ac8492086f2a172469c1ca241152e0f61d664dd08d8a47c0b7e5de3f90e",
+  "tests/check.mjs": "fce5a8fc85a8a1b6633d68543ef792cb148269b905c400e24c23ec47824c17ba",
+  "assets/app.js": "167aa446bee0211df076f425ef05e363732d2b5da67490e5055c4b2c9f92355d",
+  "assets/styles.css": "7e30feb8830eb8359b2c900aa79f1fbb06e842364fe458a731b7d04cb12b00e9",
+  "assets/favicon.svg": "eb8511a06d103dcb0471807f4f74332e53843f6124456386c3bc680d485a4599",
+  "assets/fonts/noto-naskh-arabic.ttf": "2f4b88e6ee50fa82c617e2d1d4ba18281cb1c6cd71c3af3ec64970c23995db4b",
+  "assets/fonts/jameel-noori-nastaleeq.woff2": "384d22ffe4488a32c3a972eab27f52094f34f8df8bddec95485a7b3e8ba1fd2d",
+  "assets/fonts/OFL-Noto.txt": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb",
+  "assets/vendor/lucide.min.js": "3411692820cb8d47543f69496aa25fd603a358f4498046f41c508a5a3342210e",
+  "assets/vendor/LICENSE-lucide.txt": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+}
