@@ -1,0 +1,6 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import vm from 'node:vm';import assert from 'node:assert/strict';
+const base=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');const app=fs.readFileSync(path.join(base,'assets/app.js'),'utf8');const match=app.match(/const bookPalette=(\[.*?\]);/);assert.ok(match);const colors=vm.runInNewContext(match[1]);
+function luminance(hex){const rgb=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);return rgb.reduce((s,x,i)=>s+x*[.2126,.7152,.0722][i],0)}
+function ratio(a,b){let [x,y]=[luminance(a),luminance(b)].sort((a,b)=>b-a);return (x+.05)/(y+.05)}
+let pairs=[];for(const [solid,light,dark] of colors)pairs.push(['#fff',solid],['#172d24',light],['#364b41',light],['#f3f7f4',dark],['#d2dfd5',dark]);pairs=pairs.map(([a,b])=>[a==='#fff'?'#ffffff':a,b]);const min=Math.min(...pairs.map(([a,b])=>ratio(a,b)));assert.ok(min>=7);console.log(`PASS: ${pairs.length} card/button color pairs; minimum contrast ${min.toFixed(2)}:1.`);
+const hero=[['#fff9eb','#173f5b'],['#fff9eb','#1d6551'],['#e8f1e9','#1d6551'],['#f5daa0','#24624a'],['#214132','#f4e5be']];for(const [a,b]of hero)assert.ok(ratio(a,b)>=4.5,`${a} on ${b}`);console.log('PASS: hero text and action contrast ≥4.5:1.');
